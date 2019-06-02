@@ -1,0 +1,111 @@
+.container-contact {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    
+  }
+
+  .intro-contact {
+    background: url(https://photojournal.jpl.nasa.gov/jpeg/PIA18811.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-position: center;
+  padding: 120px 0;
+  
+}
+
+
+
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font: 16px/1.5 "Dosis", sans-serif;
+}
+
+input[type=tel] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font: 16px/1.5 "Dosis", sans-serif;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font: 16px/1.5 "Dosis", sans-serif;
+}
+
+#contact-message {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font: 16px/1.5 "Dosis", sans-serif;
+}
+
+.submitbtn {
+    color: black !important;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 2px solid black !important;
+    border-radius: 6px;
+      display: inline-block;
+      font: 16px/1.5 "Dosis", sans-serif;
+      width: 100%;
+}
+
+.submitbtn:hover {
+    color: black !important;
+        background: #E0EAFC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        border-color: black !important;
+              transition: all 0.4s ease 0s;
+              opacity: 0.7;
+}
+
+.iconscontact i {
+    font-size: 30px;
+    padding: 2px;
+}
+
+.iconscontact {
+    display:none;
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+    .iconscontact i {
+        font-size: 30px;
+        padding: 5px;
+    }
+
+    .iconscontact {
+        display: block;
+    }
+
+}
+

@@ -103,28 +103,31 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 	transition: all 0.4s ease-in;
 }
 
+
+
+
+
   @media screen and (min-width: 800px) {
     aside {
-      flex: 2.5;
+      flex: 3;
     }
     article {
-      flex: 7.5;
+      flex: 7;
       }
 
       .sidenav {
-		position: fixed;
-		border: 1px solid rgba(226,226,226,1);
-		padding: 8px;
-        line-height: 1.7;
+        position: fixed;
+        border: 1px solid rgba(226,226,226,1);
+        padding: 10px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+        width: 200px;
+        
         color: black;
-        line-height: 1.5;
         
-        
-    }
+      }
     
-    a:hover + .sidenav {
-        
-    }
+    
 	.iconsmissions i {
 		font-size: 30px;
 		padding: 5px;
@@ -133,5 +136,9 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
      .h1header {
         font-size: 40px;
         color: black;
+    }
+
+    .intro {
+      display: none;
     }
     }

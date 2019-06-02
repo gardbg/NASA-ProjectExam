@@ -154,7 +154,7 @@ body {
   .logo:hover,
   .nav-links:hover {
       color: black;
-      text-decoration: underline;
+      
   }
   body {
     font-size: 18px;
@@ -169,14 +169,11 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .intro {
-  background: #F0F2F0;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #000C40, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
-
-  padding: 100px 0;
+  background: url(http://www.barraques.cat/imgdirs/big/80/804019_nasa-space-wallpaper.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 120px 0;
 }
 
 .container-timeline {
@@ -184,6 +181,7 @@ background: linear-gradient(to right, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, F
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
+  color: white;
 }
 
 h1 {
@@ -193,6 +191,8 @@ h1 {
 
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
 
 .timeline ul {
   background: #E0EAFC;  /* fallback for old browsers */

@@ -95,12 +95,13 @@ body {
   justify-content: center;
   flex-grow: 1;
   min-height: 350px;
-  background-image: url(https://cdn.wallpapersafari.com/97/47/Cu0SnF.jpg);
+  background-image: url(https://fsmedia.imgix.net/13/55/e6/4b/3d21/429c/814c/41490d07aa7d/moon-landing.jpeg?rect=0%2C238%2C3369%2C1683&auto=format%2Ccompress&dpr=2&w=650);
   background-size: cover;
   background-repeat: no-repeat;
-  
+  background-position: center;
   width: 100%;
   height: auto;
+  
 
 }
 
@@ -161,6 +162,38 @@ body {
       transition: all 0.4s ease 0s;
       }
 
+      /* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: black;
+  height: 1px;
+ 
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: black;
+}
+
       
 
 
@@ -184,6 +217,17 @@ body {
   
 }
 
+img {
+  object-fit: cover;
+}
+
+.logo img {
+  object-fit: scale-down;
+}
+
+
+
+
 @media screen and (min-width: 768px) {
   .navbar {
       display: flex;
@@ -191,6 +235,9 @@ body {
       padding-bottom: 0;
       height: 70px;
       align-items: center;
+      
+      
+      
   }
 
   .main-nav {
@@ -209,7 +256,8 @@ body {
   }
 
   .logo {
-      margin-top: 0;
+      margin-left: 10px;
+      
   }
 
   .navbar-toggle {
@@ -219,7 +267,7 @@ body {
   .logo:hover,
   .nav-links:hover {
       color: black;
-      text-decoration: underline;
+      
   }
   body {
     font-size: 18px;

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/planets2.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/contact.css">
+
+</head>
+<body>
+    
+    <!--navbar-->
+    <nav class="navbar stroke">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <a href="#" class="logo"><img src="bilder/logo.png" style="height: 50px; width: 70px;" alt="nasa_logo"></a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="index.html" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="planets2.html" class="nav-links">Planets</a>
+            </li>
+            <li>
+                <a href="timeline.html" class="nav-links">Historic Timeline</a>
+            </li>
+            
+            <li>
+                <a href="missions.html" class="nav-links">Missions</a>
+            </li>
+            <li>
+              <a href="picday.html" class="nav-links">Mars Rover</a>
+          </li>
+          <li>
+              <a href="live.html" class="nav-links">Live</a>
+          </li>
+          <li>
+              <a href="api.html" class="nav-links">In-Space</a>
+          </li>
+          <li>
+              <a href="contact.html" class="nav-links">Contact</a>
+          </li>
+        </ul>
+    </nav>
+
+    <!--content-->
+
+    <section class="intro-contact">
+        <div class="container-contact">
+          
+        </div>
+      </section>
+
+    <div class="container">
+    <main>
+        <section>
+            <article>
+                
+              <h1>Contact us  	&darr;</h1><br><hr><br>
+              <form>
+                  <h4>Full name:</h4>
+                    <div class="form-group" data-aos="fade-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                      <label for="contact-name"></label>
+                      <input type="text" class="form-control" id="contact-name" name="name"       placeholder="Enter your name.." onkeyup='validateName()'>
+                      <span class='error-message' id='name-error'></span>
+                    </div>
+                    <h4>Phone number:</h4>
+                    <div class="form-group" data-aos="fade-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                      <label for="contact-phone"></label>
+                      <input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="Ex: 1231231234.." onkeyup='validatePhone()'>
+                      <span class='error-message' id='phone-error'></span>
+                    </div>
+                    <h4>Email:</h4>
+                    <div class="form-group" data-aos="fade-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                      <label for="contact-email"></label>
+                      <input type="email" class="form-control" id="contact-email" name="email" placeholder="Enter Email.." onkeyup='validateEmail()'>
+                      <span class='error-message' id='email-error'></span>
+                    </div>   
+                    <h4>Message:</h4>
+                    <div class="form-group" data-aos="fade-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                      <label for='contact-message'></label>
+                      <textarea class="form-control" rows="5" id='contact-message'  name='message'  placeholder="Enter a brief message.." onkeyup='validateMessage()'></textarea>
+                      <span class='error-message' id='message-error'></span>
+                    </div>
+                    <br>
+                  <button onclick='return validateForm()' class="submitbtn">Submit</button>
+                  <span class='error-message' id='submit-error'></span>
+                </form>
+                <br><br><hr><br><br>
+                <h1>NASA Centers and Facilities</h1><br>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1R0oSakFjZyrlOO1rmBNJuAHiRlzWx4n-" width="100%;" height="350"></iframe>
+                <br><br><hr>
+                </article>
+
+                
+
+                
+                
+                <!--content side-->
+                <aside>
+                  <h1>To discover and expand knowledge for the benefit of humanity.</h1>
+                  <br>
+                  <div class="iconscontact">
+                    <a href="#/"><i class="fab fa-facebook"></i></a>
+                    <a href="#/"><i class="fab fa-youtube"></i></a>
+                     <a href="#/"><i class="fab fa-linkedin"></i></a>
+                     <a href="#/"><i class="fab fa-github-square"></i></a>
+                     <a href="#/"><i class="fab fa-instagram"></i></a>
+                     <a href="#/"><i class="fab fa-google"></i></a>
+                     <a href="#/"><i class="fab fa-pinterest"></i></a>
+                     
+
+             </div>
+             <br>
+                 <div class="twitter-widget-holder">
+                    <a class="twitter-timeline" href="https://twitter.com/nasa" data-chrome="transparent noscrollbar" data-tweet-limit="2">Tweets by MarsCuriosity</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  </div>
+                  
+                  <a href="https://twitter.com/nasa" class="twitter-follow-button" data-show-count="false">Follow @MarsCuriosity</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    
+                  <br><br><hr><br>
+
+                  
+
+                </aside>
+            </section>
+        </main>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    
+
+    <!--footer-->
+        <footer class="page-footer">
+            <small>© Made By: Gard</small>
+            <ul>
+              <li>
+                <a href="" target="_blank">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="" target="_blank">
+                  <i class="fab fa-twitter-square"></i>
+                </a>
+              </li>
+              <li>
+                <a href="" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="" target="_blank">
+                  <i class="fab fa-github-square"></i>
+                </a>
+              </li>
+              <li>
+                  <a href="#/"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#/"><i class="fab fa-google"></i></a>
+                  </li>
+                  <li>
+                      <a href="#/"><i class="fab fa-pinterest"></i></a>
+                    </li>
+                    <li>
+                        <a href="#/"><i class="fab fa-youtube"></i></a>
+                      </li>
+            </ul>
+          </footer>
+
+          
+    
+    
+    
+    
+    
+        <script src="js/script.js"></script>
+        <script src="js/contact.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    </body>
+    </html>

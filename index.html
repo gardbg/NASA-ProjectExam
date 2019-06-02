@@ -7,14 +7,16 @@
     <title>NASA</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  </head>
 <body>
 
-        <nav class="navbar">
+        <nav class="navbar stroke">
                 <span class="navbar-toggle" id="js-navbar-toggle">
                     <i class="fas fa-bars"></i>
                 </span>
-                <a href="#" class="logo"><img src="bilder/logo.png" style="height: 50px; width: 70px;"></a>
+                <a href="#" class="logo"><img src="bilder/logo.png" style="height: 50px; width: 70px;" alt="nasa_logo"></a>
                 <ul class="main-nav" id="js-menu">
                     <li>
                         <a href="index.html" class="nav-links">Home</a>
@@ -25,12 +27,22 @@
                     <li>
                         <a href="timeline.html" class="nav-links">Historic Timeline</a>
                     </li>
-                    <li>
-                        <a href="#" class="nav-links">Contact</a>
-                    </li>
+                    
                     <li>
                         <a href="missions.html" class="nav-links">Missions</a>
                     </li>
+                    <li>
+                      <a href="picday.html" class="nav-links">Mars Rover</a>
+                  </li>
+                  <li>
+                      <a href="live.html" class="nav-links">Live</a>
+                  </li>
+                  <li>
+                      <a href="api.html" class="nav-links">In-Space</a>
+                  </li>
+                  <li>
+                      <a href="contact.html" class="nav-links">Contact</a>
+                  </li>
                 </ul>
             </nav>
 
@@ -42,7 +54,9 @@
                       <h1>Imagine what we can do now.</h1>
                       
                       <br>
-                      <div class="button_cont"><a class="btn" href="#/"  target="_blank" onclick="yourFunction(); return false">Learn more</a></div>
+                      <div class="button_cont"><a class="btn" href="#/" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="3000"  target="_blank" onclick="yourFunction(); return false">Learn more</a></div>
                     </div>
                   </main>
                   
@@ -70,6 +84,18 @@
                           <i class="fab fa-github-square"></i>
                         </a>
                       </li>
+                      <li>
+                          <a href="#/"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#/"><i class="fab fa-google"></i></a>
+                          </li>
+                          <li>
+                              <a href="#/"><i class="fab fa-pinterest"></i></a>
+                            </li>
+                            <li>
+                                <a href="#/"><i class="fab fa-youtube"></i></a>
+                              </li>
                     </ul>
                   </footer>
                 </div>
@@ -87,5 +113,9 @@
     
     
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 </body>
 </html>
